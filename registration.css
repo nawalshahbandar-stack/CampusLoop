@@ -1,0 +1,469 @@
+/* =========================================
+   CAMPUSLOOP REGISTRATION PAGE
+   ========================================= */
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+
+    min-height: 100vh;
+
+    font-family:
+        "Segoe UI",
+        Arial,
+        sans-serif;
+
+    background:
+        linear-gradient(
+            135deg,
+            #eef2ff,
+            #dbeafe
+        );
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    padding: 30px;
+
+    color: #1f2937;
+}
+
+
+/* =========================================
+   MAIN CONTAINER
+   ========================================= */
+
+.register-container {
+
+    width: 950px;
+
+    max-width: 100%;
+
+    min-height: 600px;
+
+    background: white;
+
+    border-radius: 24px;
+
+    overflow: hidden;
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    box-shadow:
+        0 25px 60px
+        rgba(30, 50, 100, 0.18);
+}
+
+
+/* =========================================
+   LEFT SIDE
+   ========================================= */
+
+.register-left {
+
+    position: relative;
+
+    overflow: hidden;
+
+    padding: 50px;
+
+    color: white;
+
+    background:
+        linear-gradient(
+            145deg,
+            #3155d9,
+            #4f46e5
+        );
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: space-between;
+}
+
+
+/* Decorative circles */
+
+.register-left::before {
+
+    content: "";
+
+    position: absolute;
+
+    width: 280px;
+
+    height: 280px;
+
+    border-radius: 50%;
+
+    background:
+        rgba(255,255,255,0.08);
+
+    right: -110px;
+
+    top: -110px;
+}
+
+
+.register-left::after {
+
+    content: "";
+
+    position: absolute;
+
+    width: 210px;
+
+    height: 210px;
+
+    border-radius: 50%;
+
+    background:
+        rgba(255,255,255,0.06);
+
+    left: -90px;
+
+    bottom: -90px;
+}
+
+
+/* =========================================
+   LOGO
+   ========================================= */
+
+.register-logo {
+
+    font-size: 30px;
+
+    font-weight: 800;
+
+    letter-spacing: 0.5px;
+
+    position: relative;
+
+    z-index: 2;
+}
+
+
+/* =========================================
+   WELCOME
+   ========================================= */
+
+.register-welcome {
+
+    position: relative;
+
+    z-index: 2;
+}
+
+
+.register-welcome h1 {
+
+    font-size: 40px;
+
+    line-height: 1.15;
+
+    margin-bottom: 18px;
+}
+
+
+.register-welcome p {
+
+    max-width: 350px;
+
+    font-size: 16px;
+
+    line-height: 1.7;
+
+    color:
+        rgba(255,255,255,0.86);
+}
+
+
+/* =========================================
+   FEATURES
+   ========================================= */
+
+.register-features {
+
+    margin-top: 32px;
+
+    font-size: 14px;
+
+    line-height: 2.5;
+
+    color:
+        rgba(255,255,255,0.92);
+}
+
+
+/* =========================================
+   RIGHT SIDE
+   ========================================= */
+
+.register-right {
+
+    background: white;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    padding: 45px 50px;
+}
+
+
+.register-box {
+
+    width: 100%;
+
+    max-width: 360px;
+}
+
+
+/* =========================================
+   TITLE
+   ========================================= */
+
+.register-box h2 {
+
+    font-size: 30px;
+
+    color: #111827;
+
+    margin-bottom: 8px;
+}
+
+
+.register-subtitle {
+
+    font-size: 14px;
+
+    color: #6b7280;
+
+    margin-bottom: 25px;
+}
+
+
+/* =========================================
+   FORM
+   ========================================= */
+
+.register-form {
+
+    width: 100%;
+}
+
+
+.form-group {
+
+    margin-bottom: 17px;
+}
+
+
+.form-group label {
+
+    display: block;
+
+    margin-bottom: 7px;
+
+    font-size: 14px;
+
+    font-weight: 600;
+
+    color: #374151;
+}
+
+
+.form-group input,
+.form-group select {
+
+    width: 100%;
+
+    height: 47px;
+
+    padding: 0 14px;
+
+    border: 1px solid #d1d5db;
+
+    border-radius: 10px;
+
+    background: #f9fafb;
+
+    color: #111827;
+
+    font-size: 14px;
+
+    outline: none;
+
+    transition: 0.25s ease;
+}
+
+
+.form-group input::placeholder {
+
+    color: #9ca3af;
+}
+
+
+.form-group input:focus,
+.form-group select:focus {
+
+    background: white;
+
+    border-color: #3155d9;
+
+    box-shadow:
+        0 0 0 4px
+        rgba(49,85,217,0.10);
+}
+
+
+/* =========================================
+   REGISTER BUTTON
+   ========================================= */
+
+.register-btn {
+
+    width: 100%;
+
+    height: 49px;
+
+    margin-top: 5px;
+
+    border: none;
+
+    border-radius: 10px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #3155d9,
+            #4f46e5
+        );
+
+    color: white;
+
+    font-size: 15px;
+
+    font-weight: 700;
+
+    cursor: pointer;
+
+    transition: 0.25s ease;
+
+    box-shadow:
+        0 8px 18px
+        rgba(49,85,217,0.22);
+}
+
+
+.register-btn:hover {
+
+    transform:
+        translateY(-2px);
+
+    box-shadow:
+        0 12px 25px
+        rgba(49,85,217,0.30);
+}
+
+
+.register-btn:active {
+
+    transform:
+        translateY(0);
+}
+
+
+/* =========================================
+   FOOTER
+   ========================================= */
+
+.register-footer {
+
+    text-align: center;
+
+    margin-top: 22px;
+
+    font-size: 12px;
+
+    color: #9ca3af;
+}
+
+
+/* =========================================
+   MOBILE
+   ========================================= */
+
+@media (max-width: 750px) {
+
+    body {
+
+        padding: 15px;
+
+    }
+
+
+    .register-container {
+
+        grid-template-columns: 1fr;
+
+        min-height: auto;
+
+        max-width: 450px;
+
+    }
+
+
+    .register-left {
+
+        min-height: 280px;
+
+        padding: 35px;
+
+    }
+
+
+    .register-logo {
+
+        font-size: 26px;
+
+    }
+
+
+    .register-welcome h1 {
+
+        font-size: 30px;
+
+    }
+
+
+    .register-features {
+
+        display: none;
+
+    }
+
+
+    .register-right {
+
+        padding: 40px 30px;
+
+    }
+
+}
